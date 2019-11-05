@@ -1,0 +1,112 @@
+! -----------------------------------
+! Includes for easier (Instant) rice!
+! -----------------------------------
+!#include ".cache/squash/x_colors"
+!#include "/home/winston/.xrdb/colors/monodevek"
+!#include "/usr/share/fonts/anka/"
+!#include "/home/winston/.xrdb/rofi/monodevek"
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.rgba: rgb
+Xft.dpi: 96
+
+URxvt*font: xft:Iosevka Term Semibold:size=12
+URxvt*boldfont: xft:Iosevka Term Bold:size=12
+URxvt*italicfont: xft:Iosevka Term Italic:size=12
+URxvt*boldItalicfont: xft:Iosevka Term Bold Italic:size=12
+
+URxvt*altSendsEscape: true
+URxvt.iso14755: False
+
+URxvt.perl-ext-common: matcher,selection-to-clipboard,keyboard-select,selection
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.Control-plus: perl:font-size:increase
+URxvt.keysym.Control-minus:perl:font-size:decrease
+URxvt.keysym.M-a: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.copyCommand: xsel -ib
+URxvt.pasteCommand: xsel -ob
+
+!! Common Keybinds for Navigations
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+
+URxvt.scrollBar: false
+URxvt.internalBorder:  16
+!URxvt*depth: 32
+URxvt.keysym.M-u:     perl:url-select:select_next
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5
+URxvt*borderless: false
+URxvt.letterSpace: 0
+
+
+!colors
+*background:  #282F37
+*foreground:  #F1FCF9
+*cursorColor: #F1FCF9
+!*color0:      #20262C
+!*color1:      #DB86BA
+!*color2:      #74DD91
+!*color3:      #E49186
+!*color4:      #75DBE1
+!*color5:      #B4A1DB
+!*color6:      #9EE9EA
+!*color7:      #F1FCF9
+!*color8:      #465463
+!*color9:      #D04E9D
+!*color10:     #4BC66D
+!*color11:     #DB695B
+!*color12:     #3DBAC2
+!*color13:     #825ECE
+!*color14:     #62CDCD
+!*color15:     #E0E5E5
+
+! ======= colors ==========
+*foreground: #F8F8F2
+*background: #282F37
+
+!!! black dark/light
+*color0:     #000000
+*color8:     #4D4D4D
+
+!!! red dark/light
+*color1:     #FF5555
+*color9:     #FF6E67
+
+!!! green dark/light
+*color2:     #50FA7B
+*color10:    #5AF78E
+
+!!! yellow dark/light
+*color3:     #F1FA8C
+*color11:    #F4F99D
+
+!!! blue dark/light
+*color4:     #BD93F9
+*color12:    #CAA9FA
+
+!!! magenta dark/light
+*color5:     #FF79C6
+*color13:    #FF92D0
+
+!!! cyan dark/light
+*color6:     #8BE9FD
+*color14:    #9AEDFE
+
+!!! white dark/light
+*color7:     #BFBFBF
+*color15:    #E6E6E6
+
+
